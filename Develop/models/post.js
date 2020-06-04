@@ -33,5 +33,5 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
-  return Post
+  return Post;
 };
