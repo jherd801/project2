@@ -13,7 +13,7 @@ const path = require("path")
 const app = express();
 const PORT = process.env.PORT || 8080;
 const server = https.createServer(app)
-server.listen(PORT, function(){
+server.listen(PORT, => {
   console.log("Server listening on: http://localhost:" + PORT);
 });
 // Requiring our models for syncing
