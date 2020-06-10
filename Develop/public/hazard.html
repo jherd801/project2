@@ -10,9 +10,11 @@
 
 <body>
     
+<!-- Convert this and all input fields into a single form instead of separate divs -->
+
     <div class="col s12 m6 l4">
-    <label>Please select the type of hazrard</label>
-    <select class= "browser-default">
+    <label>Please select the type of hazard</label>
+    <select class= "browser-default" id="category">
       <option value="" disabled selected>Choose your option</option>
       <option value="Biological">Biological</option>
       <option value="Climatic / Natural Events">Climatic / Natural Events</option>
@@ -40,8 +42,8 @@
         <form class="col s12 m6 l4">
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Please describe the hazard</label>
+              <textarea id="description" class="materialize-textarea"></textarea>
+              <label for="description">Please describe the hazard</label>
             </div>
           </div>
         </form>
