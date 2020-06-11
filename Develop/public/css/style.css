@@ -28,7 +28,7 @@ body{
     border: #EDF5E1 solid 0.25px;
 }
 
-#textarea1{
+.materialize-textarea{
     color: #05386B;
 }
 
