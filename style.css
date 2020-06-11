@@ -1,0 +1,42 @@
+body{
+    background-color: #5CDB95;
+}
+
+#nav-bar{
+    background-color: #05386B;
+    text-align: center;
+}
+
+#label{
+    color: #05386B;
+}
+
+#nav-wrapper{
+    text-align: center;
+}
+
+#submit-button{
+    background-color: #05386B;
+    color: #EDF5E1;
+    border-radius: 2px;
+    border: solid #379683 1px;
+}
+
+#hazard-dropdown{
+    background-color: #5CDB95;
+    color: #05386B;
+    border: #EDF5E1 solid 0.25px;
+}
+
+#textarea1{
+    color: #05386B;
+}
+
+#email{
+    color: #05386B;
+}
+
+#name{
+    color: #05386B;
+    background-color: #5CDB95;
+}
