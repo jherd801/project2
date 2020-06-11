@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hazard Form</title>
+    <!--Materialize Framework-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!--Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link rel="stylesheet" href="style.css">
+    </head>
 </head>
 
 <body>
+  <nav id="nav-bar">
+    <div class="nav-wrapper" id="nav-wrapper">
+      <a href="form.html" class="brand-logo">Hazard Report</a>
+    </div>
+  </nav>
     
-    <div class="col s12 m6 l4">
-    <label>Please select the type of hazrard</label>
-    <select class= "browser-default">
+    <div class= "row">
+    <form class="col s12 m6 l4">
+    <label id="label">Please select the type of hazrard</label>
+    <select class= "browser-default" id="hazard-dropdown">
       <option value="" disabled selected>Choose your option</option>
       <option value="Biological">Biological</option>
       <option value="Climatic / Natural Events">Climatic / Natural Events</option>
@@ -31,6 +43,7 @@
       <option value="Vehicles & Transportation">Vehicles & Transportation</option>
       <option value="Work Environment">Work Environment</option>
     </select>
+    </form>
     </div>
 
     <br>
@@ -41,7 +54,7 @@
           <div class="row">
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Please describe the hazard</label>
+              <label id="label" for="textarea1">Please describe the hazard</label>
             </div>
           </div>
         </form>
@@ -52,11 +65,16 @@
           <div class="row">
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Hazard Location</label>
+              <label id="label" for="textarea1">Hazard Location</label>
             </div>
           </div>
         </form>
       </div>
+      <!--Form Submit Button-->
+      <button 
+      class="btn waves-effect waves-light" type="submit" name="action" id="submit-button">Submit
+          <i class="material-icons right">send</i>
+      </button>
 
     
 
