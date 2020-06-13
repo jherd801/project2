@@ -24,18 +24,18 @@
 
   
 
-  <form class="col s12 m6 l4" id="hazard-form">
+  <form id="hazard-form">
     <br>
     
-    <div class="row col s12 m6 l4">
-      <div class="input-field col s12">
+    <div class="row">
+        <div class="input-field col s10 m10 l8 offset-s1 offset-m1 offset-l2">
         <textarea id="title" class="materialize-textarea"></textarea>
-        <label id="label" for="textarea1">Please enter a title for the hazard.</label>
+        <label id="label" for="title">Please enter a title for the hazard.</label>
       </div>
     </div>
 
-    <div class= "row col s12 m6 l4">
-    <label id="label">Please select the type of hazrard</label>
+    <div class= "row">
+    <label id="label" for="category">Please select the type of hazrard</label>
     <select class= "browser-default" id="category">
       <option value="" disabled selected>Choose your option</option>
       <option value="Biological">Biological</option>
@@ -60,37 +60,37 @@
     <br>
 
       <p class="range-field">
-      <label id="label">Please rate the severity</label>
+      <label id="label" for="severity">Please rate the severity</label>
         <input type="range" id="test5" min="0" max="10" id="severity" />
       </p>
     
     <br>
         
-      <div class="row col s12 m6 l4">
-        <div class="input-field col s12">
+      <div class="row">
+        <div class="input-field col s10 m10 l8 offset-s1 offset-m1 offset-l2">
           <textarea id="description" class="materialize-textarea"></textarea>
-          <label id="label" for="textarea1">Please describe the hazard</label>
+          <label id="label" for="description">Please describe the hazard</label>
         </div>
       </div>
      
-      <div class="row col s12 m6 l4">
-        <div class="input-field col s12">
+      <div class="row">
+        <div class="input-field col s10 m10 l8 offset-s1 offset-m1 offset-l2">
           <textarea id="lattitude" class="materialize-textarea"></textarea>
-          <label id="label" for="textarea1">Hazard Lattitude</label>
+          <label id="label" for="lattitude">Hazard Lattitude</label>
         </div>
       </div>
 
-      <div class="row col s12 m6 l4">
-        <div class="input-field col s12">
-          <textarea id="longitutde" class="materialize-textarea"></textarea>
-          <label id="label" for="textarea1">Hazard Longitutde</label>
+      <div class="row">
+        <div class="input-field col s10 m10 l8 offset-s1 offset-m1 offset-l2">
+          <textarea id="longitude" class="materialize-textarea"></textarea>
+          <label id="label" for="longitude">Hazard Longitutde</label>
         </div>
       </div>
 
-      <div class="row col s12 m6 l4">
-        <div class="input-field col s12">
+      <div class="row">
+        <div class="input-field col s10 m10 l8 offset-s1 offset-m1 offset-l2">
           <textarea id="action" class="materialize-textarea"></textarea>
-          <label id="label" for="textarea1">Hazard action</label>
+          <label id="label" for="action">Hazard action</label>
         </div>
       </div>
 

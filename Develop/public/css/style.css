@@ -4,7 +4,6 @@ body{
 
 #nav-bar{
     background-color: #05386B;
-    text-align: center;
 }
 
 #label{
@@ -31,6 +30,7 @@ body{
 
 .materialize-textarea{
     color: #05386B;
+    text-align: center;
 }
 
 #email{
@@ -41,3 +41,9 @@ body{
     color: #05386B;
     background-color: #5CDB95;
 }
+
+#hazard-form{
+    text-align: center;
+    align-content: center;
+}
+
