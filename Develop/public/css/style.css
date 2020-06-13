@@ -9,6 +9,7 @@ body{
 
 #label{
     color: #05386B;
+    font-size: medium;
 }
 
 #nav-wrapper{
@@ -22,7 +23,7 @@ body{
     border: solid #379683 1px;
 }
 
-#hazard-dropdown{
+.browser-default{
     background-color: #5CDB95;
     color: #05386B;
     border: #EDF5E1 solid 0.25px;
