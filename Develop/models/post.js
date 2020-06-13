@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  const Post = sequelize.define("Post", {
+  const Hazards = sequelize.define("Hazards", {
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -33,5 +33,5 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
-  return Post;
+  return Hazards;
 };

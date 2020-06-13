@@ -1,11 +1,17 @@
-// Requiring our Todo model
+// Requiring our model
 const db = require("../models");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
-  // POST route for saving a new post
-  app.post("/api/posts", (req, res) => {
+  // GET route for getting all of the posts
+  app.get("/api/hazards/", (req, res) => {
+    db.Post.findAll({}).then(hazardReports => {
+      res.json(hazardReports);
+    });
+  });
+  // POST route for saving a new hazard reoort
+  app.post("/api/hazards/", (req, res) => {
     console.log(req.body);
     db.Post.create({
       title: req.body.title,
@@ -15,8 +21,8 @@ module.exports = function(app) {
       longitude: req.body.longitude,
       description: req.body.description,
       actionRequired: req.body.actionRequired
-    }).then(dbPost => {
-      res.json(dbPost);
+    }).then(hazardReports => {
+      res.json(hazardReports);
     });
   });
 };

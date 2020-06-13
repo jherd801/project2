@@ -10,7 +10,7 @@ $(document).ready(() => {
   const hazardForm = $("hazard-form");
 
   // Submit button event listener
-  $(hazardForm).on("submit", event => {
+  $(hazardForm).on("submit", function handleFormSubmit(event) {
     event.preventDefault();
     if (!titleInput.val().trim() || !categorySelected.val()) {
       return;
