@@ -1,5 +1,4 @@
 # project2
-# project2
 Screen shot link goes here
 Project 2 is an app that allows the user to report hazardous situations in their current location.
 Once the user identifies the hazard,  they will be able to choose the type of hazard from a drop down menu.
