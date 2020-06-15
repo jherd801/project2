@@ -1,13 +1,13 @@
 $(document).ready(() => {
   // jQuery references to grab form data
-  const titleInput = $("title");
-  const categorySelected = $("category");
-  const severityInput = $("severity");
-  const latitudeInput = $("latitude");
-  const longitudeInput = $("longitude");
-  const descriptionInput = $("description");
-  const actionInput = $("action");
-  const hazardForm = $("hazard-form");
+  const titleInput = $("#title");
+  const categorySelected = $("#category");
+  const severityInput = $("#severity");
+  const latitudeInput = $("#latitude");
+  const longitudeInput = $("#longitude");
+  const descriptionInput = $("#description");
+  const actionInput = $("#action");
+  const hazardForm = $("#hazard-form");
 
   // Submit button event listener
   $(hazardForm).on("submit", function handleFormSubmit(event) {

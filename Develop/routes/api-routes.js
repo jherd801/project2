@@ -5,15 +5,15 @@ const db = require("../models");
 // =============================================================
 module.exports = function(app) {
   // GET route for getting all of the posts
-  app.get("/api/hazards/", (req, res) => {
-    db.Post.findAll({}).then(hazardReports => {
+  app.get("/api/hazards", (req, res) => {
+    db.Hazards.findAll({}).then(hazardReports => {
       res.json(hazardReports);
     });
   });
   // POST route for saving a new hazard reoort
-  app.post("/api/hazards/", (req, res) => {
+  app.post("/api/hazards", (req, res) => {
     console.log(req.body);
-    db.Post.create({
+    db.Hazards.create({
       title: req.body.title,
       category: req.body.category,
       severity: req.body.severity,
