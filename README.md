@@ -18,9 +18,8 @@ Tech we used to get our application to work:
 - [JQuery](https://jquery.com/)
 - JavaScript
 - [Materialize CSS Framework](https://materializecss.com/getting-started.html)
-- Node
-- Sequel
-- MySequel
+- NodeJS
+- MySQL
 ### Contributors
 **Project 2 - Title of project**
 | Contributor                              | Contribution         |

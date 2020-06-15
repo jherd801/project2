@@ -1,8 +1,8 @@
 $(document).ready(() => {
   // jQuery references to grab form data
-  const usernameInput = $("username");
-  const emailInput = $("email");
-  const userForm = $("user-form");
+  const usernameInput = $("#username");
+  const emailInput = $("#email");
+  const userForm = $("#user-form");
 
   // Submit button event listener
   $(userForm).on("submit", event => {

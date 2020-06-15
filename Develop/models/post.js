@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
   const Hazards = sequelize.define("Hazards", {
     title: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1]
       }
@@ -23,14 +23,14 @@ module.exports = function(sequelize, DataTypes) {
     },
     description: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     actionRequired: {
       type: DataTypes.BOOLEAN,
-      defaultValue: false
+      defaultValue: true
     }
   });
   return Hazards;
