@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const mysql = require("mysql2")
 const Sequelize = require("sequelize");
 const basename = path.basename(module.filename);
 const env = process.env.NODE_ENV || "development";
@@ -20,9 +21,9 @@ if (config.use_env_variable) {
 }
 
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+  var connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  connection = mysql.createConnection({
+  var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "password",
